@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
     <head>
@@ -42,25 +42,27 @@
             y = 0;
             z = 0;
             w = 0;
+
             $(function() {
                 $(".div1").on("mouseenter", function() {
                     $("#s1").text(x += 1)
                 })
-            })
-            $(function() {
                 $(".div2").on("mouseover", function() {
                     $("#s2").text(y += 1)
                 })
-            })
-            $(function() {
+                $(".div2").on("mouseover", function() {
+                    $("#s2").text(y += 1)
+                })
                 $(".div3").on("mouseenter", function() {
                     $("#s3").text(z += 1)
                 })
-            })
-            $(function() {
                 $(".div4").on("mouseover", function() {
+
                     $("#s4").text(w += 1)
                 })
+              /*  $("#p2").on("mouseover", function(event) {
+                    event.stopPropagation();
+                })*/
             })
         </script>
     </head>
