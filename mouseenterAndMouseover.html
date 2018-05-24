@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <style>
+            .div1,
+            .div2,
+            .div3,
+            .div4 {
+                width: 200px;
+                height: 200px;
+            }
+            
+            .div1 {
+                background: darkcyan;
+            }
+            
+            .div2 {
+                background: violet;
+            }
+            
+            .div3 {
+                background: darkgray;
+            }
+            
+            .div4 {
+                background: darkgreen;
+            }
+            
+            p {
+                width: 110px;
+                height: 100px;
+                background: aquamarine;
+                margin: 0 auto;
+            }
+        </style>
+        <script>
+            x = 0;
+            y = 0;
+            z = 0;
+            w = 0;
+            $(function() {
+                $(".div1").on("mouseenter", function() {
+                    $("#s1").text(x += 1)
+                })
+            })
+            $(function() {
+                $(".div2").on("mouseover", function() {
+                    $("#s2").text(y += 1)
+                })
+            })
+            $(function() {
+                $(".div3").on("mouseenter", function() {
+                    $("#s3").text(z += 1)
+                })
+            })
+            $(function() {
+                $(".div4").on("mouseover", function() {
+                    $("#s4").text(w += 1)
+                })
+            })
+        </script>
+    </head>
+
+    <body>
+        <div class="div1">
+            div1没有子元素(mouseenter)
+        </div>
+        <span id="s1"></span>
+        <div class="div2">
+            div2没有子元素(mouseover)
+        </div>
+        <span id="s2"></span>
+        <div class="div3">
+            <p id="p1"> div3有子元素p(mouseenter)</p>
+        </div>
+        <span id="s3"></span>
+        <div class="div4">
+            <p id="p2">div4有子元素p(mouseover)</p>
+        </div>
+        <span id="s4"></span>
+    </body>
+
+</html>
