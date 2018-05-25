@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+
+    <body>
+        <ul id="ul-test">
+            <li>星期一</li>
+            <li>星期二</li>
+            <li>星期三</li>
+            <li>星期四</li>
+            <li>星期五</li>
+        </ul>
+    </body>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        //原生JavaScript,需要一个个绑定,如果是未来元素li,页面加载了,在通过js动态加进来,这种写法无效,点击li没有反应
+
+        /*var ol = document.getElementById("ul-test");
+        var oli = ol.getElementsByTagName("li");
+        for (var i =0 ,len = oli.length;i <len;i++ ) {
+        	oli[i].addEventListener("click",function(){
+        		alert(this.innerHTML);
+        	})
+        }
+        var lis =document.createElement("li");
+        var node = document.createTextNode("这是我新添加的li");
+        lis.appendChild(node);
+        ol.appendChild(lis);*/
+        //为了解决未来元素也能够被绑定事件,可以采取事件委托的办法来解决,就是把事件绑在ul上面
+        /*	var oul = document.getElementById("ul-test");
+        	oul.addEventListener("click",function(ev){
+        		var ev = ev || window.event;
+        		var target = ev.target || ev.srcElement;
+        		alert(target.tagName);
+        		if(target.tagName.toLocaleLowerCase()==="li"){
+        			alert(target.innerHTML)
+        		}
+        	})
+        	var lis =document.createElement("li");
+        	var node = document.createTextNode("这是我新添加的li");
+        	lis.appendChild(node);
+        	oul.appendChild(lis);*/
+
+        //接下来看一下jquery是如何实现.利用on就可以轻松搞定,jquery就是写最少的代码,干最多的活
+        $(function() {
+            $("ul").on("click", function(ev) {
+                s = ev.target;
+                alert($(s).html());
+            })
+            $("#ul-test").append("<li>我是新添加的,请为我绑定事件!</li>");
+        })
+    </script>
+
+</html>
