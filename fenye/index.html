@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="css/index.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+    </head> 
+
+    <body>
+        <div class="box" >
+            <div class="title">
+                PHP + Ajax + jQuery 无刷新分页
+            </div>
+            <!--页面内容-->
+            <div class="list">
+                <ul class="content"></ul>
+            </div>
+            <!--分页链接--> 
+            <div class="pagelist">
+            </div>
+        </div>
+        <script>
+            $(function() {
+                var page = 1;
+                var n = 0;
+                var max = 1;
+                getData();
+                /*获取指定页的数据*/
+                function getData() {
+                    $.ajax({
+                        type: "GET",
+                        url: "ajax.php",
+                        data: {"page": page }, 
+                        dateType: "json",
+                        success: function(json) {
+                        	json = JSON.parse(json);
+                            n = json.total;
+                            max = json.max;
+                            content(json.list);
+                        },
+                        complete: function() {
+                            pageList();
+                        },
+                        error: function() {
+                            alert("请求错误");
+                        }
+                    });
+                }
+                
+                /*生成分页连接*/
+                function pageList() {
+                    page = Math.min(page, max);
+                    page = Math.max(page, 1);
+                    var html = "<div><span>共" + n + "条,第" + page + "/" + max + "页</span>";
+                    html += '<a href="#" data-page="1">首页</a>';
+                    html += (page > 1) ? '<a href="#" data-page="' + (page - 1) + '">上一页</a>' : '<a href="#" data-page="1">上一页</a>';
+                    html += (page < max) ? '<a href="#" data-page="' + (page + 1) + '">下一页</a>' : '<a href="#" data-page="' + max + '">下一页</a>';
+                    html += '<a href="#" data-page="' + max + '">尾页</a></div>';
+                    var $html = $(html);
+                    //为链接添加单击事件
+                    $html.find("a").click(function() {
+                        page = $(this).attr("data-page");
+                        getData();
+                    });
+                    $(".pagelist").html($html);
+
+                }
+                /*生成内容*/
+                function content(list) {
+                    var str = " ";
+                    for(var i in list) {
+                        str += '<li><img src="' + list[i]['pic'] + '"/><p><a href="#">' + list[i]['title'] + '</a></p></li>'
+                    }
+                    $(".content").html(str);
+                }
+            })
+        </script>
+    </body>
+
+</html>

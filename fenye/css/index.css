@@ -1,0 +1,50 @@
+body{
+	margin: 0;
+	background: whitesmoke;
+	color: #555;
+}
+div.box{
+	
+	color: firebrick;
+	width: 900px;	
+	position: relative;
+	margin: 0 auto ;
+}
+div.title{
+	text-align: center;
+}
+ul.content{
+	list-style: none;
+}
+li{
+	width:250px;
+	height:210px;
+	float:left;
+	border:1px solid gainsboro;
+	font-size: 12px;
+	text-decoration: none;
+}
+div.pagelist{
+	position: absolute;
+	top: 500px;
+	left: 200px;
+	
+}
+img{
+	width: 250px;
+	height: 155px;
+	margin: 0px;
+}
+.content a,
+.pagelist a
+{
+	cursor: pointer;
+	font-size: 16px;
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+
+.content a:hover,
+.pagelist a:hover{
+	color: firebrick;
+}
