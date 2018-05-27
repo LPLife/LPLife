@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-transition: .2s all;
+	-moz-transition: .2s all;
+	-ms-transition: .2s all;
+	-o-transition: .2s;
+	transition: .2s all;
+	
+}
+
+html,
+body {
+	height: 2600px;
+	width: 100%;
+}
+
+.container {
+	width: 1310px;
+	
+}
+
+body {
+	background: -webkit-gradient(linear,left top ,left bottom,color-stop(0%,rgba(43, 236, 143, 0.2)),color-stop(100%,rgb(38, 59, 197)));
+	background: linear-gradient(top,rgba(43, 236, 143, 0.2),rgb(38, 59, 197));
+	background: -ms-linear-gradient(top,rgba(43, 236, 143, 0.2) 0%,rgb(38, 59, 197)100%);
+	background: -moz-linear-gradient(top,rgba(43, 236, 143, 0.2) 0%,rgb(38, 59, 197)100%);
+	/*	background: #D3DBDE;*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1em;
+	color: #333;
+	font-weight: bold;
+}
+
+#logo-img,
+.nav,
+.home_info {
+	position: absolute;
+}
+
+#logo-img {
+	width: 60px;
+	height: 60px;
+	float: left;
+	border: 1px solid #C5C5C5;
+	left: 90px;
+	top: 1px;
+}
+
+#logo-img:hover {
+	border: 1px solid #bbe637;
+}
+
+.hd_top {
+	
+	height: 180px;
+	width: 1320px;
+	border-radius: 25px;
+	margin-left:12px;
+}
+
+.home_info {
+	float: right;
+	top: 15px;
+	left: 580px;
+	width: 740px;
+	
+}
+.home_info a{
+	text-decoration: none;
+}
+#phone_number {
+	color: red;
+	font-size: 1.5em;
+}
+
+.item_info,
+#phone_number {
+	font-family: "arial, helvetica, sans-serif";
+}
+
+.item_info {
+	font-size: 1.4em;
+	cursor: pointer;
+}
+
+i:hover,
+.info_a:hover {
+	color: #f3c07c;
+	text-decoration: none;
+}
+.menuItem{
+	max-width: 350px;
+	max-height: 400;
+	
+}
+div.mypanel ul li{
+	
+	float: left;
+	height: 45px;
+	width: 62px;
+	line-height: 26px;
+	margin: 0px;	
+}
+#panel2,#panel3,#panel4{
+	
+	background:thistle;
+	width: 250px;
+	height: 250px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius:3px;
+}
+.mypanel ul li a{
+	text-decoration: none;
+	font-size: 1.7em;
+	font-family: "courier new" ;
+}
+.mypanel > h3{
+	color: red;
+}
+ul{
+	list-style: none;
+}
+div#book{
+	position: absolute;
+    width:1290px;
+    height: 1100px;
+    margin-top: 1200px;
+    margin-left: 30px;
+}
+div #p1{
+	position: absolute;
+	margin-top: 75px;
+	width:100%;
+	height:100px;
+	text-align: center;
+	background:rgba(255,255,255,0.1);
+	text-align: center;
+	font-size: 3.2em;
+	color: salmon;
+
+}
+div.bookcorner h3:first-child{
+	text-align: center;
+	color: red;
+}
+div.bookcorner div.booklist{
+	top: 245px;
+	height: 840px;
+	width: 850px;
+	position: absolute;
+	border: 1px solid gold;
+	margin-left: 230px;
+	
+}
+.booklist h4 {
+	color: #B8DAFF;
+    text-align: center;
+    margin-top: 70px;
+}
+.booklist h4 a{
+	   font-size: 1.4em;
+	   color: floralwhite;
+}
+.booklist h4 a,
+div.bookcorner div.booklist ul  li a{
+	text-decoration: none;
+}
+.booklist h4 a:hover,
+div.bookcorner div.booklist ul  li a:hover{
+	color: firebrick;
+}
+div.bookcorner  h3.everyday{
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	text-align: center;
+	color: magenta;
+    top: 200px;
+    left: 600px;
+}
+div.bookcorner div.booklist > ul{
+	height: 150px;
+	list-style: none;
+	margin: 0px;
+	margin-left: 10px;
+	padding: 10px;
+}
+div.bookcorner div.booklist > ul > li{
+  border: 1px solid #20da8d;
+  font-size: 1.4em;
+  text-align: center;
+  float: left;
+  width: 200px;
+  font-family: "courier new";
+  height: 40px;
+}
+div.bookcorner div.booklist > ul  li a{
+	color: white;
+	cursor: pointer;
+	top:15px;
+	position: relative;
+}
+div.bookcorner div.booklist > ul ul li{
+	float: right;
+	margin-left: 0px;
+	left: 0px;
+	/*width: 100px;
+	height: 100px;*/
+}
+
+div.myfooter{
+	width: 100%;
+	height: 80px;
+	margin-top: 1080px;
+	background: rgba(255,255,255,0.2);
+}
+ul.bookimg1 {
+	position: absolute;
+	top: 137px;
+	left: 23px;
+}
+ul.bookimg2{
+	position: absolute;
+	top: 395px;
+	left: 23px;
+}
+ul.bookimg3{
+	position: absolute;
+	top: 652px;
+	left: 23px;
+}
+ul.bookimg1 img,
+ul.bookimg2 img,
+ul.bookimg3 img
+{
+	width: 180px;
+	height: 120px;
+	margin: 10px;
+	padding: 0px;
+
+}

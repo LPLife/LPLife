@@ -1,0 +1,66 @@
+div.login{
+	width: 1000px;
+	height: 800px;
+	position: absolute;
+	left: 100px;
+	top: 200px;
+	background-image: url(../img/book7.jpg);
+	border-radius:15px;
+}
+
+div.login div.logincontent{
+	
+	margin-top: 40px;
+	width: 690px;
+	height:550px;
+    top: 100px;
+    left: 140px;
+    position: absolute;
+    box-shadow: 0px 0px 35px #f1df83;
+    border-radius:8px;
+    
+}
+div.login div.logincontent h3{
+	text-align: center;
+	color: crimson;
+}
+div.login div.logincontent label{
+	font-size: 1.6em;
+	color: white;
+	margin-right:2px ;
+	height: 25px;
+}
+div.login div.logincontent p{
+	text-align: center;
+	color: #333;
+	font-family: "courier new";
+	font-size: 1.2em;
+}
+div.login div.logincontent input[type="text"],
+div.login div.logincontent input[type="password"]{
+	width: 255px;
+	height: 40px;
+	border-radius: 3px;
+	outline: none;
+}
+div.login div.logincontent input[type="submit"]{
+		font-size: 1.3em;
+		width: 50px;
+		height: 25px;
+}
+div#loginpanel{
+	margin-top:10px ;
+	margin-left: 150px;
+	margin-bottom: 10px;
+}
+div.logincontent  a.forgetPassword{
+	font-size: 1.3em;
+	color: #333;
+	text-decoration: none;
+}
+div.logincontent  a.forgetPassword:hover{
+	color: firebrick;
+}
+.error{
+	color: red;
+}

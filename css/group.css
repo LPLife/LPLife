@@ -1,0 +1,82 @@
+div.groupContent,
+div.groupContent ul.kind{
+	margin: 0px;
+	padding: 0px;
+}
+div.groupContent{
+	margin-top: 50px;
+	position: absolute;
+	width: 1100px;
+	height: 1100px;
+	background: rgba(255,255,255,0.7);
+	border-radius:50%;	
+	left: 120px;
+}
+div.groupContent ul.kind{
+	position: absolute;
+	list-style: none;
+}
+div.groupContent ul.kind > li{
+	margin-top: 205px;
+	margin-left: 121px;
+	float: left;
+	width: 208px;
+	height: 25px;
+	overflow: hidden;
+	
+}
+div.groupContent ul.kind li >a{
+	
+	cursor: pointer;
+	position: relative;
+	color: #007BFF;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-align: center;
+	top: 10px;
+	font-family: "courier new";
+}
+div.groupContent ul.kind li >a:hover{
+	color: firebrick;
+}
+div.groupContent img{
+	height: 200px;
+	width: 200px;
+	border-radius: 3px;
+}
+div.groupContent ul.kindimg1,
+div.groupContent ul.kindimg2,
+div.groupContent ul.kindimg3
+{
+	height: 300px;
+}
+div.groupContent ul.kindimg1 li a:hover,
+div.groupContent ul.kindimg2 li a:hover,
+div.groupContent ul.kindimg3 li a:hover{
+	cursor: pointer;
+}
+div.groupContent ul.kindimg1 li{
+	float: left;
+	margin: 10px;
+	margin-top: 230px;
+	margin-left: 120px;
+	width: 200px;
+	height: 200px;
+}
+div.groupContent ul.kindimg2 li{
+	float: left;
+	margin: 10px;
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 200px;
+	height: 200px;
+    
+}
+div.groupContent ul.kindimg3 li{
+	float: left;
+	margin: 10px;
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 200px;
+	height: 200px;
+}

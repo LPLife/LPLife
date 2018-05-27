@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!--规定HTML文档的字符编码-->
+    <meta charset="UTF-8">
+    <!--用以声明当前页面用chrome内核来渲染,安装了GCF,则使用GCF来渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--作者-->
+    <meta name="author" content="lupei,tel-18742073873,email-15778895371">
+    <!--网页搜索关键字-->
+    <meta name="keywords" content="HTML,JavaScript,CSS,XML,JSON">
+    <!--对网页的描述和目的-->
+    <meta name="description" content="网上书店,寻找属于你的一本书">
+    <!--让网页不在移动设备中缩放-->
+    <meta name="viewport" content="width=device-width,
+										initial-scale=1.0, 
+										maximum-scale=1.0, 
+										user-scalable=no" />
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/imgStyle.css" />
+    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/mainNav.js"></script>
+    <!--网页的标题-->
+    <title>找团购</title>
+
+  </head>
+
+  <body>
+    <!--顶部栏-->
+    <!--header:start-->
+    <header class="header">
+      <header class="header">
+        <div class="headermain">
+          <div class="hd_top">
+
+            <div class="home_info">
+              <!--登录信息start-->
+              <span id="phone_number"><i class="glyphicon glyphicon-earphone"></i> 免费订购电话:<strong>123456789</strong></span>
+              <span class="item_info"><i class=" glyphicon glyphicon-user"></i> <a href="login.html" class="info_a">会员登陆&nbsp;|</a></span>
+              <span class="item_info"> <a href="#" class="info_a">注册&nbsp;|</a></span>
+              <span class="item_info"> <a href="#" class="info_a">用户登录&nbsp;|</a></span>
+              <span class="item_info"> <a href="#" class="info_a">退出登录&nbsp;|</a></span>
+              <span class="item_info"> <a href="#" class="info_a">后台登录&nbsp;</a></span>
+            </div>
+            <!--登录信息end-->
+
+            <!--网页导航start-->
+            <div class="navigation">
+              <ul class="nav nav-pills ">
+                <li>
+                  <a href="homepage.html" id="aItem1" class="items"><i class="glyphicon glyphicon-home"></i>首页&nbsp;&nbsp;</a>
+                </li>
+                <li>
+                  <a href="group.html#panel2" id="aItem2" class="items"><i class="glyphicon glyphicon-flag"></i>找团购&nbsp;&nbsp;</a>
+                  <div class="mypanel" id="panel2">
+                  	<h3>三人团购</h3>
+                    <ul class="menu nav-pills">
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                    </ul>
+                    <h3>五人团购</h3>
+                    <ul class="menu nav-pills">
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </li>
+                <li>
+                  <a href="overseas.html#panel3" id="aItem3" class="items"><i class="glyphicon glyphicon-globe"></i>海外淘&nbsp;&nbsp;</a>
+                  <div class="mypanel" id="panel3">
+
+                    <ul>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </li>
+                <li>
+                  <a href="sales/index.html#panel4" id="aItem4" class="items"><i class="glyphicon glyphicon-fire"></i>促销中心&nbsp;&nbsp;</a>
+                  <div class="mypanel" id="panel4">
+                    <ul>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li>
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#">4</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="consult.html#panel5" id="aItem5" class="items"><i class="glyphicon glyphicon-hand-right"></i>咨询&nbsp;&nbsp;</a>
+
+                </li>
+              </ul>
+            </div>
+            <!--网页导航end-->
+            <!--logo图片start-->
+            <div id="hd_top_logo">
+              <a href="#" class="img">
+                <img src="img/caterpillar .jpg" class="img-circle" alt="logo" id="logo-img" />
+              </a>
+            </div>
+            <!--logo图片end-->
+          </div>
+        </div>
+
+      </header>
+    </header>
+    <script type="text/javascript" src="js/group.js" ></script>
+    <link rel="stylesheet" href="css/group.css" />
+    <div class="groupContent">
+    	<ul class="kind">
+        <li><a href="#"><span></span></a></li>
+    		<li><a href="#"><span></span></a></li>
+    		<li><a href="#"><span></span></a></li>
+    		<li><a href="#"><span></span></a></li>
+    		<li><a href="#"><span></span></a></li>
+    		<li><a href="#"><span></span></a></li>
+    		<li><a href="#"><span></span></a></li>
+    		<li><a href="#"><span></span></a></li>
+    		<li><a href="#"><span></span></a></li>
+    	</ul>
+    		<ul class="kindimg1">
+    		<li><a href="#"><img src="img/book10.jpg"></a></li>
+    		<li><a href="#"><img src="img/book11.jpg"></a></li>
+    		<li><a href="#"><img src="img/book12.jpg"></a></li>
+    		</ul>
+    		<ul class="kindimg2">
+    		<li><a href="#"><img src="img/book13.jpg"></a></li>
+    		<li><a href="#"><img src="img/book14.jpg"></a></li>
+    		<li><a href="#"><img src="img/book15.jpg"></a></li>
+    		</ul>
+    		<ul class="kindimg3">
+    		<li><a href="#"><img src="img/book16.jpg"></a></li>
+    		<li><a href="#"><img src="img/book17.jpg"></a></li>
+    		<li><a href="#"><img src="img/book18.jpg"></a></li>
+    		</ul>
+    </div>
+     <!--读书角每日推荐start-->
+    <div id="book" class="bookcorner">
+      <h3>今日格言</h3>
+      <p id="p1"><br /><br /><br />读书破万卷下笔如有神</p>
+      <h3 class="everyday">每日推荐</h3>
+      <div class="booklist">
+        <h4><a href="#">前端</a></h4>
+        <ul>
+          <li>
+            <a href="#">css</a>
+          </li>
+          <li>
+            <a href="#">html</a>
+          </li>
+          <li>
+            <a href="#">jquery</a>
+          </li>
+          <li>
+            <a href="#">Vue</a>
+          </li>
+            <ul class="bookimg1">
+            <li>
+              <a href="#"><img src="img/29.jpg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/30.jpg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/31.jpg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/32.jpg" /></a>
+            </li>
+           </ul>
+        </ul>
+        <h4><a href="#">后台</a></h4>
+        <ul>
+          <li>
+            <a href="#">java</a>
+          </li>
+          <li>
+            <a href="#">servlet</a>
+          </li>
+          <li>
+            <a href="#">Linux</a>
+          </li>
+          <li>
+            <a href="#">python</a>
+          </li>
+        
+            <ul class="bookimg2">
+              <li>
+                <a href="#"><img src="img/33.jpg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/34.jpg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/35.jpg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/36.jpg" /></a>
+              </li>
+            </ul>
+        
+        </ul>
+        <h4><a href="#">网络安全</a></h4>
+        <ul>
+          <li>
+            <a href="#">安全监控</a>
+          </li>
+          <li>
+            <a href="#">黑客大曝光</a>
+          </li>
+          <li>
+            <a href="#">网络安全</a>
+          </li>
+          <li>
+            <a href="#">黑客</a>
+          </li>
+          <ul class="bookimg3">
+            <li>
+              <a href="#"><img src="img/36.jpg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/38.jpg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/32.jpg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/29.jpg" /></a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <!--读书角每日推荐end-->
+      <!--页脚start-->
+      <div class="myfooter">
+
+      </div>
+        <!--页脚end-->
+    </div>
+  </body>
+  <!--
+        	作者：1164112500@qq.com
+        	时间：2018-04-29
+        	描述：
+        -->
+
+</html>
